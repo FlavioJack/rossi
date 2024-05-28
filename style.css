@@ -47,6 +47,10 @@ i{
     margin: 20px 10px;
 }
 
+#aside, #menubars{
+    display: none;
+}
+
 #navbar li{
     display: inline-block;
     margin: 0 10px;
@@ -73,6 +77,22 @@ i{
 
     #home-title{
         cursor:default;
+        display: inline-block;
+        margin: 20px 0;
+        width: 70%;
+    }
+
+    #menubars{
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+    #aside{
+        display: contents;
+    }
+
+    #navbar{
+        display: none;
     }
 
     .header-items{
