@@ -64,6 +64,58 @@ i{
     margin: 0 5px;
 }
 
-/* @media screen and (max-width: 800px){
+@media screen and (max-width: 800px){
+    
+    #header{
+        display: block;
+        margin: 0 auto;
+    }
 
-} */
+    #home-title{
+        cursor:default;
+    }
+
+    .header-items{
+        margin: 10px;
+        text-align: center;
+    }
+
+    #navbar li{
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+
+
+/* CONTATTI */
+
+.contacts{
+    width: 60%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    backdrop-filter: blur(2px);
+}
+
+label{
+    color: black;
+    font-weight: bold;
+    display: block;
+    margin: 10px auto;
+}
+
+.contacts input{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 80%;
+    font-size: 15px;
+}
+
+@media  screen and (max-width: 500px) {
+    .contacts input{
+        width: 100%;
+    }
+}
