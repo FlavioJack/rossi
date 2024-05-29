@@ -114,24 +114,37 @@ i{
     max-width: 500px;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(61, 61, 61, 0.733);
     border-radius: 8px;
     backdrop-filter: blur(2px);
+    text-align:center;
 }
 
-label{
-    color: black;
-    font-weight: bold;
-    display: block;
-    margin: 10px auto;
+h2{
+    margin-bottom: 10px;
 }
 
-.contacts input{
-    border: 2px solid black;
-    border-radius: 5px;
-    height: 30px;
-    width: 80%;
-    font-size: 15px;
+#email-info{
+    margin: 25px 0 0;
+}
+
+#cell-info{
+    margin: 100px 0 0px;
+}
+
+.contacts p{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.cell-container, .email-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email, .cell{
+    margin-left: 10px;
 }
 
 @media  screen and (max-width: 500px) {
