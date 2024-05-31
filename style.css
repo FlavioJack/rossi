@@ -79,6 +79,7 @@ i{
 @media screen and (max-width: 882px){
     
     #topbar{
+        z-index: 100;
         margin: 0;
         display: none;
         position: fixed;
@@ -86,7 +87,7 @@ i{
         right: 0;
         width: 200px;
         height: auto;
-        background-color: rgba(45, 61, 75, 0.466);
+        background-color: rgba(45, 61, 75, 0.87);
     }
 
     #topbar li{
