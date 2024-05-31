@@ -78,6 +78,22 @@ i{
 
 @media screen and (max-width: 882px){
     
+    #topbar{
+        margin: 0;
+        display: none;
+        position: fixed;
+        top: 100px;
+        right: 0;
+        width: 200px;
+        height: auto;
+        background-color: rgba(45, 61, 75, 0.466);
+    }
+
+    #topbar li{
+       display: block;
+       padding: 20px 10px;
+    }
+
     /* TOOGLE BAR MENU */
     .bars-container{
         padding: 20px 15px;
@@ -110,10 +126,31 @@ i{
         content: "";
     }
 
-    .social-icons, #topbar{
+    .social-icons{
         display: none;
     }
-  
+
+    /* Appare side bar */
+    #toogle-bar-input:checked ~ #topbar{
+        display: flex;
+    }
+
+    /* Scompare barra centrale toogle */
+    #toogle-bar-input:checked ~ .bars-container .toogle-bars{
+        background-color: transparent;
+    }
+    
+    /* Si trasforma il toogle in croce */
+    #toogle-bar-input:checked ~ .bars-container .toogle-bars::after{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    #toogle-bar-input:checked ~ .bars-container .toogle-bars::before{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+
 }
 
 
