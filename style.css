@@ -13,7 +13,8 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;    
+    background-attachment: fixed;
+    width: 100vw;    
     height: 100vh;
     position: relative;
 }
@@ -30,9 +31,14 @@ i{
 }
 
 #header{
+    z-index: 100;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: black;
 }
 
 #title{
@@ -64,7 +70,7 @@ i{
     color: darkcyan;
 }
 
-/* HIDDEN STAFF */
+/* Hidden staff */
 .social-icons i{
     padding: 10px 10px;
 }
@@ -78,6 +84,10 @@ i{
 
 @media screen and (max-width: 882px){
     
+    #header{
+        background-color: black;
+    }
+    
     #topbar{
         z-index: 100;
         margin: 0;
@@ -90,12 +100,20 @@ i{
         background-color: rgba(45, 61, 75, 0.87);
     }
 
+    /* Side bar menu */
+    #topbar ul{
+        width: 100%;
+    }
     #topbar li{
        display: block;
-       padding: 20px 10px;
+       padding: 0;
+    }
+    #topbar a{
+        display: block;
+        padding: 20px;
     }
 
-    /* TOOGLE BAR MENU */
+    /* Toogle bar menu */
     .bars-container{
         padding: 20px 15px;
         position: relative;
@@ -162,12 +180,12 @@ i{
 .contacts{
     width: 80%;
     max-width: 500px;
-    margin: 50px auto;
+    margin: 200px auto;
     padding: 20px;
     background-color: rgba(61, 61, 61, 0.733);
     border-radius: 8px;
     backdrop-filter: blur(2px);
-    text-align:center;
+    text-align: center;
 }
 
 #email-info{
