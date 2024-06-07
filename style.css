@@ -175,6 +175,34 @@ i{
 
 
 
+/* CHI SONO */
+
+.chisono{
+    width: 80%;
+    max-width: 500px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: rgba(61, 61, 61, 0.733);
+    border-radius: 8px;
+    backdrop-filter: blur(2px);
+    text-align: justify;
+}
+
+.chisono img{
+    width: 40%;
+    margin-right: 10px;
+    float: left;
+}
+
+/* .chisono::after{
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+
+
+
 /* CONTATTI */
 
 .contacts{
@@ -188,6 +216,7 @@ i{
     text-align: center;
 }
 
+
 #email-info{
     margin: 25px 0 0;
 }
@@ -196,7 +225,11 @@ i{
     margin: 100px 0 0px;
 }
 
-.cell-container, .email-container{
+#social-info{
+    margin: 100px 0 0;
+}
+
+.cell-container, .email-container, .social-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,13 +247,13 @@ i{
     font-weight: 500;
 }
 
-.contacts p{
+.contacts .bottom-description{
     font-size: 12px;
     margin-top: 30px;
     font-weight: 100;
 }
 
-.email, .cell{
+.icon-description{
     margin-left: 10px;
 }
 
