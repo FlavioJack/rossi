@@ -84,6 +84,15 @@ i{
 }
 
 
+
+
+
+
+
+
+
+
+
 /* MOBILE */
 
 @media screen and (max-width: 882px){
@@ -193,11 +202,17 @@ i{
 
 
 
+
+
+
+
+
+
 /* CHI SONO */
 
 .chisono{
     width: 80%;
-    max-width: 500px;
+    max-width: 700px;
     margin: 200px auto;
     padding: 20px;
     background-color: rgba(61, 61, 61, 0.733);
@@ -207,9 +222,10 @@ i{
 }
 
 .chisono img{
-    width: 40%;
-    margin-right: 10px;
+    width: 70%;
+    margin: 0px 20px 10px 0px;
     float: left;
+    display: block;
 }
 
 /* .chisono::after{
@@ -218,7 +234,21 @@ i{
     clear: both;
 } */
 
+.chisono h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
 
+@media  screen and (max-width: 882px) {
+    .chisono img{
+        width: 70%;
+        margin: 20px auto 20px;
+        float: none;
+        display: block;
+    }
+}
 
 
 /* CONTATTI */
