@@ -42,7 +42,11 @@ i{
 }
 
 #title{
-    cursor:default;
+    cursor: default;
+}
+
+#header img{
+    width: 200px;
 }
 
 .header-items{
@@ -88,19 +92,18 @@ i{
         background-color: black;
     }
     
+    /* Side bar menu */
     #topbar{
         z-index: 100;
         margin: 0;
-        display: none;
+        right: -100%;
         position: fixed;
         top: 100px;
-        right: 0;
         width: 200px;
         height: auto;
         background-color: rgba(45, 61, 75, 0.87);
+        transition: all 0.8s ease;
     }
-
-    /* Side bar menu */
     #topbar ul{
         width: 100%;
     }
@@ -118,6 +121,7 @@ i{
         padding: 20px 15px;
         position: relative;
         margin: 0 10px;
+        cursor: pointer;
     }
     .toogle-bars{
         width: 25px;
@@ -145,13 +149,17 @@ i{
         content: "";
     }
 
+    #taptoclose-layer{
+        position: fixed;
+    }
+
     .social-icons{
         display: none;
     }
 
     /* Appare side bar */
     #toogle-bar-input:checked ~ #topbar{
-        display: flex;
+        right: 0;
     }
 
     /* Scompare barra centrale toogle */
@@ -167,6 +175,16 @@ i{
     #toogle-bar-input:checked ~ .bars-container .toogle-bars::before{
         transform: rotate(-45deg);
         top: 0;
+    }
+
+    /* Appare overlay che se tocchi schermo fuori dal menu si chiude */
+    #toogle-bar-input:checked ~ #taptoclose-layer{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
     }
 
 
