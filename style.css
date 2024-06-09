@@ -11,14 +11,13 @@ body{
     color: white;
     background-image: url("img/home-bg.png");
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     width: 100vw;    
     height: 100vh;
     position: relative;
 }
-
 
 a{
     text-decoration: none;
@@ -46,7 +45,8 @@ i{
 }
 
 #header img{
-    width: 200px;
+    width: 40%;
+    max-width: 180px;
 }
 
 .header-items{
@@ -74,6 +74,11 @@ i{
     color: darkcyan;
 }
 
+/* Background Pics */
+.bg-pic{
+    width: 100%
+}
+
 /* Hidden staff */
 .social-icons i{
     padding: 10px 10px;
@@ -82,15 +87,6 @@ i{
 .hidden{
     display: none;
 }
-
-
-
-
-
-
-
-
-
 
 
 /* MOBILE */
@@ -211,40 +207,59 @@ i{
 /* CHI SONO */
 
 .chisono{
-    width: 80%;
-    max-width: 700px;
-    margin: 200px auto;
-    padding: 20px;
-    background-color: rgba(61, 61, 61, 0.733);
-    border-radius: 8px;
-    backdrop-filter: blur(2px);
-    text-align: justify;
+    background-color: rgb(221, 218, 208);
 }
 
-.chisono img{
+.chisono h2{
+    color: rgb(41, 41, 48);
+    text-align: center;
+    font-size: 6vw;
+    font-weight: 600;
+    margin: 30px;
+}
+
+.chisono .container{
+    padding: 0 60px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.chisono .container p{
+    text-align: justify;
+    color: black;
+}
+
+#profile-pic{
     width: 70%;
-    margin: 0px 20px 10px 0px;
+    max-width: 400px;
+    margin: 0px 50px 10px 0px;
     float: left;
     display: block;
 }
 
-/* .chisono::after{
+.chisono::after{
     content: "";
     display: table;
     clear: both;
-} */
-
-.chisono h2{
-    text-align: center;
-    font-size: 35px;
-    font-weight: 500;
-    margin-bottom: 20px;
 }
 
+
+
 @media  screen and (max-width: 882px) {
-    .chisono img{
-        width: 70%;
-        margin: 20px auto 20px;
+
+    .chisono .container{
+        padding: 0 30px;
+        margin: 0 0px;
+        max-width: 1000px;
+    }
+
+    .chisono h2{
+        font-size: 50px;
+    }
+    
+    #profile-pic{
+        width: 100%;
+        margin: 20px auto;
         float: none;
         display: block;
     }
