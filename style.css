@@ -84,8 +84,9 @@ i{
     background-color: rgb(37, 44, 58);
     margin: 0px auto;
     color: azure;
-    position: relative;
-    bottom: 0;
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
 }
 .footer p{
     text-align: center;
