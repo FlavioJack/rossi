@@ -9,7 +9,7 @@ body{
     font-weight: normal;
     font-style: normal;
     color: white;
-    background-color: rgb(239, 240, 227);
+    background-color: rgb(250, 250, 250);
     /* background-image: url("img/home-bg.png"); */
     background-position: center;
     background-repeat: no-repeat;
@@ -30,46 +30,42 @@ i{
     color: white;
 }
 
-#header{
+.header{
     z-index: 100;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: static;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.437);
+    background-color: rgb(60, 96, 128);
 }
 
-#title{
-    cursor: default;
-}
-
-#header img{
-    width: 30%;
+.logo-firma{
+    width: 100%;
     max-width: 180px;
 }
 
 .header-items{
-    margin: 20px 30px;
+    margin: 10px 30px;
 }
 
 #aside, #menubars{
     display: none;
 }
 
-#header ul{
+.header ul{
     list-style: none;
 }
 
 #topbar li{
     display: inline-block;
-    padding: 10px 10px;
-    font-size: 23px;
+    font-size: 18px;
 }
 
 #topbar a{
     transition: color 0.3s ease 0s;
+    padding: 10px 10px;
 }
 
 #topbar a:hover{
@@ -78,7 +74,24 @@ i{
 
 /* Background Pics */
 .bg-pic{
-    width: 100%
+    width: 100%;
+}
+
+/* Footer */
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(37, 44, 58);
+    margin: 0px auto;
+    color: azure;
+    position: relative;
+    bottom: 0;
+}
+.footer p{
+    text-align: center;
+    line-height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
 
 /* Hidden staff */
@@ -101,9 +114,9 @@ i{
 /* MOBILE */
 
 @media screen and (max-width: 988px){
-    
-    #header{
-        background-color: rgba(0, 0, 0, 0.437);
+
+    .logo-firma{
+        margin: 10px;
     }
     
     /* Side bar menu */
@@ -115,7 +128,7 @@ i{
         top: 100px;
         width: 200px;
         height: auto;
-        background-color: rgba(45, 61, 75, 0.95);
+        background-color: rgba(45, 61, 75, 1);
         transition: all 0.8s ease;
     }
     #topbar ul{
@@ -208,29 +221,43 @@ i{
 
 
 
+/* HOME */
 
+.section-1{
+    
+}
 
 
 
 
 /* CHI SONO */
+
+.wrapper-chisono{  
+    background-image: url("img/home-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    height: 100%;
+}
+
 .chisono h2{
-    color: rgb(41, 41, 48);
+    color: aliceblue;
     text-align: center;
     font-size: 6vw;
-    font-weight: 600;
+    font-weight: 500;
     margin: 30px;
 }
 
 .chisono .container{
     padding: 0 60px;
-    margin: 0 auto;
-    max-width: 1000px;
+    margin: 30px auto;
+    max-width: 900px;
 }
 
 .chisono .container p{
+    color: aliceblue;
     text-align: justify;
-    color: black;
 }
 
 #profile-pic{
@@ -247,12 +274,21 @@ i{
 
     .chisono .container{
         padding: 0 30px;
-        margin: 0 0px;
+        margin: 0 auto 30px;
         max-width: 1000px;
     }
 
+    /* .chisono .bg-pic{
+
+    } */
+
     .chisono h2{
         font-size: 50px;
+    }
+
+    .chisono .container p{
+        max-width: 400px;
+        margin: 0 auto;
     }
     
     #profile-pic{
@@ -266,12 +302,21 @@ i{
 
 /* CONTATTI */
 
+.wrapper-contacts{  
+    background-image: url("img/surf.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    height: 100%;
+}
+
 .contacts{
     width: 80%;
     max-width: 500px;
-    margin: 200px auto;
+    margin: 20px auto;
     padding: 20px;
-    background-color: rgba(61, 61, 61, 0.733);
+    background-color: rgba(61, 61, 61, 0.5);
     border-radius: 8px;
     backdrop-filter: blur(2px);
     text-align: center;
@@ -319,7 +364,5 @@ i{
 }
 
 @media  screen and (max-width: 500px) {
-    .contacts input{
-        width: 100%;
-    }
+   
 }
