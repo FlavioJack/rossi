@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     font-family: "Raleway", sans-serif;
     font-weight: normal;
@@ -84,6 +88,7 @@ i{
     background-color: rgb(37, 44, 58);
     margin: 0px auto;
     color: azure;
+    clear: both;
     position: absolute; 
     bottom: 0; 
     left: 0;
