@@ -248,18 +248,18 @@ i{
     background-attachment:fixed;
 }
 
+.chisono .container{
+    padding: 0 60px;
+    margin: 0 auto;
+    padding: 30px 0;
+    max-width: 900px;
+}
+
 .chisono h2{
     color: aliceblue;
     text-align: center;
     font-size: 6vw;
     font-weight: 500;
-    margin: 30px;
-}
-
-.chisono .container{
-    padding: 0 60px;
-    margin: 30px auto;
-    max-width: 900px;
 }
 
 .chisono .container p{
@@ -272,7 +272,7 @@ i{
     max-width: 400px;
     margin: 0px 50px 10px 0px;
     float: left;
-    display:block;
+    display: block;
 }
 
 
@@ -284,10 +284,6 @@ i{
         margin: 0 auto 30px;
         max-width: 1000px;
     }
-
-    /* .chisono .bg-pic{
-
-    } */
 
     .chisono h2{
         font-size: 50px;
@@ -307,6 +303,7 @@ i{
 }
 
 
+
 /* CONTATTI */
 
 .wrapper-contacts{  
@@ -315,13 +312,14 @@ i{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment:fixed;
-    height: 100%;
+
+    padding: 20px 0;
 }
 
 .contacts{
     width: 80%;
     max-width: 500px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px;
     background-color: rgba(61, 61, 61, 0.5);
     border-radius: 8px;
