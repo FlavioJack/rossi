@@ -144,7 +144,7 @@ i{
         top: 100px;
         width: 200px;
         height: auto;
-        background-color: rgba(45, 61, 75, 1);
+        background-color: rgba(20, 23, 27, 0.9);
         transition: all 0.8s ease;
     }
     #topbar ul{
@@ -294,8 +294,8 @@ i{
 @media  screen and (max-width: 882px) {
 
     .chisono .container{
-        padding: 0 30px;
-        margin: 0 auto 30px;
+        padding: 30px 30px;
+        margin: 10px;
         max-width: 1000px;
     }
 
