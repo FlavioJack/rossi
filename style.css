@@ -401,19 +401,30 @@ i{
     display: block;
     flex-wrap: wrap;
     display: flex;
-    justify-content: space space-evenly;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.gallery-box{
-    background-color: black;
-    margin: 10px 50px;
+.gallery-box img{
+    display: block;
+    margin: 10px;
     width: 500px;
-    height: 300px;
 }
 
 
 
 @media  screen and (max-width: 500px) {
-   
+    .gallery-subcontainer{
+        display: block;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery-box img{
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
 }
